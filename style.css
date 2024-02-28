@@ -13,7 +13,7 @@ body {
   border-radius: 5px;
 }
 #display {
-  margin: 10px auto;
+  margin: 20px auto 10px auto;
   width: 400px;
   height: 100px;
   background-color: #ff9b9b;
@@ -25,6 +25,7 @@ body {
 }
 #innerDisplay {
   margin: 15px;
+
   font-size: 3rem;
 }
 #buttons {
@@ -63,6 +64,10 @@ body {
 }
 .button:active {
   background-color: #9ba2a8;
+}
+.button:focus {
+  border: 1px #d3dd4d solid;
+  color: #d3dd4d;
 }
 
 .zero {

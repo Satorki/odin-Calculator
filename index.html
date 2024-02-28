@@ -4,50 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="buttons.js" defer></script>
     <script src="script.js" defer></script>
     <title>Odin Calculator</title>
   </head>
   <body>
     <section id="case">
       <section id="display">
-        <div id="innerDisplay">2+2</div>
+        <div id="innerDisplay"></div>
       </section>
       <section id="buttons">
         <div id="left-row">
           <div class="row">
-            <button type="button" class="button">clear</button>
-            <button type="button" class="button">/</button>
-            <button type="button" class="button">*</button>
+            <button type="button" id="clear" class="button">clear</button>
+            <button type="button" id="divide" class="button">/</button>
+            <button type="button" id="multiply" class="button">*</button>
           </div>
 
           <div class="row">
-            <button type="button" class="button">7</button>
-            <button type="button" class="button">8</button>
-            <button type="button" class="button">9</button>
+            <button type="button" id="a7" class="button">7</button>
+            <button type="button" id="a8" class="button">8</button>
+            <button type="button" id="a9" class="button">9</button>
           </div>
 
           <div class="row">
-            <button type="button" class="button">4</button>
-            <button type="button" class="button">5</button>
-            <button type="button" class="button">6</button>
+            <button type="button" id="a4" class="button">4</button>
+            <button type="button" id="a5" class="button">5</button>
+            <button type="button" id="a6" class="button">6</button>
           </div>
 
           <div class="row">
-            <button type="button" class="button">1</button>
-            <button type="button" class="button">2</button>
-            <button type="button" class="button">3</button>
+            <button type="button" id="a1" class="button">1</button>
+            <button type="button" id="a2" class="button">2</button>
+            <button type="button" id="a3" class="button">3</button>
           </div>
 
           <div class="row">
-            <button type="button" class="button zero">0</button>
-            <button type="button" class="button">.</button>
+            <button type="button" id="a0" class="button zero">0</button>
+            <button type="button" id="colon" class="button">.</button>
           </div>
         </div>
 
         <div class="right-row">
-          <button type="button" class="button minus">-</button>
-          <button type="button" class="button plus">+</button>
-          <button type="button" class="button enter">Enter</button>
+          <button type="button" id="substract" class="button minus">-</button>
+          <button type="button" id="add" class="button plus">+</button>
+          <button type="button" id="enter" class="button enter">Enter</button>
         </div>
       </section>
     </section>
