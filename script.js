@@ -8,18 +8,25 @@ class Button {
   }
   mouseClick() {
     this.element.addEventListener("click", () => {
+      if (displayShow.innerText.toString().includes(".")) {
+        functionalButtons[6].doing = "";
+      } else {
+        functionalButtons[6].doing = ".";
+      }
       typeof this.doing === "function"
         ? this.doing()
         : (displayShow.innerText += this.doing);
     });
   }
   buttonClick() {
-    document.addEventListener("keydown", (event) => {
-      event.key === "0"
-        ? typeof this.doing === "function"
-          ? this.doing()
-          : (displayShow.innerText += this.doing)
-        : "nothing";
+    document.addEventListener("keypress", (event) => {
+      if (event.key === this.doing.toString()) {
+        if (typeof this.doing.toString() === "function") {
+          this.doing();
+        } else {
+          displayShow.innerText += this.doing;
+        }
+      }
     });
   }
 }
@@ -78,9 +85,7 @@ const resultf = () => {
       }
     }
   }, 0);
-  console.log(numbers);
-  console.log(calculated);
-  displayShow.innerText = calculated
+  displayShow.innerText = calculated;
   numbers = [];
 };
 
